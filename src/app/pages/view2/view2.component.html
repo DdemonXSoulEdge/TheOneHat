@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="navbar">
+    <span class="navbar-brand">The One Hat</span>
+    <button class="menu-button">
+      <i class="pi pi-bars"></i>
+    </button>
+  </div>
+<div class="product-card">
+  <img [src]="product.image" [alt]="product.name" />
+
+  <h3>{{ product.name }}</h3>
+  <p class="price">{{ product.price | currency:product.currency }}</p>
+
+  <p-button 
+    label="Agregar al Carrito" 
+    styleClass="buy-button" 
+    (onClick)="addToCart()">
+  </p-button>
+
+  <div class="description">
+    <p><strong>Descripción:</strong><br>
+    {{ product.description }}</p>
+  </div>
+
+  <div class="sizes">
+    <p><strong>Talla:</strong></p>
+    <div class="size-options">
+      <button 
+        *ngFor="let size of product.sizes" 
+        class="size-btn"
+        [class.active]="selectedSize === size"
+        (click)="selectSize(size)">
+        {{ size }}
+      </button>
+    </div>
+  </div>
+</div>
+</div>

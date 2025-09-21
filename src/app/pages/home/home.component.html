@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="navbar">
+    <span class="navbar-brand">The One Hat</span>
+    <button class="menu-button">
+      <i class="pi pi-bars"></i>
+    </button>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar..." />
+    <button class="search-button">Buscar</button>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/51hkK05L2UL._SLDPMOBCAROUSELAUTOCROP288221_MCnd_AC_SR462,693_.jpg"
+        alt="Sombrero de Trafalgar Law" />
+      <h3>Sombrero de Trafalgar Law</h3>
+      <p>$499.99</p>
+      <p-button label="Comprar" [routerLink]="'/view'" styleClass="buy-button"></p-button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61s4iN02LfL.jpg" alt="Sombrero de Portgas D. Ace" />
+      <h3>Sombrero de Portgas D. Ace</h3>
+      <p>$499.99</p>
+      <p-button label="Comprar" [routerLink]="'/view2'" styleClass="buy-button"></p-button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71qEZdzzJgL.jpg" alt="Sombrero de Kuma" />
+      <h3>Sombrero de Kuma</h3>
+      <p>$299.99</p>
+      <p-button label="Comprar" [routerLink]="'/view3'" styleClass="buy-button"></p-button>
+    </div>
+  </div>
+</div>

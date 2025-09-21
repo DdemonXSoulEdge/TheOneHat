@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  background-color: #f0f2f5; 
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh; 
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #fdfdfd;
+  border-radius: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #27B4F5;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.auth-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #27B4F5;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #000000 !important;
+}
+
+input[pinputtext] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.95rem;
+    transition: border 0.2s ease;
+    background-color: #ccc;
+    color: #000000;
+
+}
+
+input[pinputtext]:focus {
+    border: 1px solid #27B4F5;
+    box-shadow: 0 0 5px rgba(39, 180, 245, 0.3);
+    color: #000000;
+}
+
+.btn-ingresar.p-button {
+    width: 100%;
+    border-radius: 25px;
+    background-color: #27B4F5 !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-ingresar.p-button:hover {
+    background-color: #1a8dcf !important;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #555;
+}
+
+.register-link a {
+    color: #27B4F5;
+    text-decoration: none;
+    font-weight: bold;
+}
